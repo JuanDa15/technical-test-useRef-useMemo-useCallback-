@@ -8,19 +8,6 @@ header {
 	display: flex;
 }
 
-main {
-	display: flex;
-	flex-flow: row wrap;
-	gap: 1rem;
-	justify-content: center;
-	align-items: center;
-}
-
-main > article {
-	flex:  1 1 33%;
-	text-align: center;
-}
-
 .alert {
 	padding: .5rem;
 	background-color: rgb(31, 113, 168);
