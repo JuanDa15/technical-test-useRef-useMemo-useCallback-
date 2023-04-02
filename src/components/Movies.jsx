@@ -5,10 +5,10 @@ import './Movies.css'
 /* eslint-disable no-tabs */
 export function ListOfMovies ({ movies }) {
   return (
-    <section>
+    <section className='movies'>
       {
 				movies.map(result =>
-					<article key={result.id}>
+					<article className='movie' key={result.id}>
 						<h2>{result.title}</h2>
 						<figure>
 							<img src={result.poster} alt={result.title} width='300' />
@@ -28,7 +28,7 @@ export function NoMoviesResult ({ error }) {
 }
 
 export function Movies ({ movies }) {
-	const hasMovies = movies.length > 0
+	const hasMovies = movies?.length > 0
 	return (
 		hasMovies
 			? <ListOfMovies movies={movies} />
